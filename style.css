@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color:  hsl(217, 54%, 11%);
+    height: 100vh;
 }
 section{
     width: 350px;
