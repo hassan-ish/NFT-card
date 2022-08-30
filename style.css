@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+body {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(217, 54%, 11%);
+}
+section{
+    width: 350px;
+    height: 600px;
+    background-color:  hsl(216, 50%, 16%);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.img{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 20px;
+    position: relative;
+}
+.img img{
+    height: 100%;
+    border-radius: 10px;
+}
+.img:hover::after{
+    content: "";
+    position: absolute;
+    width: calc(100% - 50px);
+    height: 100%;
+    z-index: 1;
+    background-color: hsla(178, 100%, 50%, 0.366);
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+.data{
+    padding: 20px;
+}
+.data h2 {
+    color: white;
+    font-weight: 600;
+}
+.data h2:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.data > p:first-of-type{
+    color: hsl(215, 51%, 70%);
+}
+.data > div:first-of-type{
+    display: flex;
+    justify-content: space-between;
+}
+.data .ETHD{
+    display: flex;
+    align-items: center;
+}
+.data .ETH {
+    margin-left: 5px;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+.data .dateD{
+    display: flex;
+    align-items: center;
+}
+.data .date {
+    color:  hsl(215, 51%, 70%);
+    font-weight: 400;
+    margin-left: 5px;
+}
+.icon{
+    margin-top: 5px;
+}
+.hr {
+    width: 100%;
+    background-color: hsla(215, 52%, 70%, 0.26);
+    height: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.footer{
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+}
+.footer .pimg{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    outline: 1px solid white;
+}
+.pimg img {
+    width: 100%;
+}
+.footer p {
+    color: hsl(215, 51%, 70%);
+}
+.footer p span {
+    color: white;
+}
+.footer p span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
